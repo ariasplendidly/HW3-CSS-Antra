@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+
+}
+
+.header-Main_dark{
+}
+
+.header-Main_slider{
+    padding: 10px 10px 10px 10px;
+    background-color: #000;
+     /* display: inline; */
+    /* justify-content: ; */
+    /* border: 2px solid #51cbee; */
+
+}
+
+#partition1 {
+    display: inline;
+    position: relative;
+    left: 15%;
+    cursor: pointer;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    /* list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; */
+}
+
+
+#partition1 li {
+    display: inline;
+    /* float: left; */
+}
+
+#partition1 li a {
+    position: relative;
+    margin-left: 10px;
+    cursor: pointer;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    z-index: 0;
+}
+
+li a:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #F68026;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+li a:hover:before,
+li a:focus:before {
+    transform: scale(1);
+}
+
+
+.title{
+    background-color: #c6bfbf;
+    padding: 20px 150px 10px 150px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.partition2{
+    background-color: #c6bfbf;
+    padding: 0px 150px 20px 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragraph{
+    display: grid;
+    grid-template-columns: 33.3%33.3%33.3%;
+    padding: 10px 150px 20px 150px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.partition3{
+    padding: 0px 30px 20px 0px;
+}
+
+.end_slider{
+    display: flex;
+    position:fixed;
+    padding: 0px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: #0b4d14;
+    /* border: 2px solid hsl(305, 82%, 63%); */
+
+}
+
+.first-three{
+    display: flex;
+    position: relative;
+    left: 0px;
+}
+
+.last-three{
+    display: flex;
+    position: relative;
+    left: 55%;
+    
+}
+
+
+
+/* #partition4 li{
+    display: inline;
+    position:relative;
+    left: 10%;
+    border: 2px solid hsl(305, 82%, 63%);
+    margin-left: 20px;
+} */
